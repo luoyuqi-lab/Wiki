@@ -7,12 +7,16 @@ on:
       - 'daily-tips'
   pull_request:
     branches: [ master ]
+    # Triggers when the dialy-tips file change.
     paths:
       - 'daily-tips'
 jobs:
+  # This workflow contain a single job called "Check daily tips".
   daily-tips:
+    # OS version.
     runs-on: ubuntu-20.04
     steps:
+      # Get source code of the repository.
       - uses: actions/checkout@v2
       - name: Check daily tips
         run: |
