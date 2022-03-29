@@ -1,0 +1,19 @@
+name: mytest
+
+on:
+  push:
+    branched: [ master ]
+    paths:
+      - 'daily-tips'
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  daily-tips:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check daily tips
+        run: |
+          echo okkkkkk!
+
