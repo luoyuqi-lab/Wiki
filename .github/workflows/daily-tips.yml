@@ -18,7 +18,7 @@ jobs:
     steps:
       # Get source code of the repository.
       - uses: actions/checkout@v2
+      # Use shellcheck from action marketplace.
       - name: Check daily tips
-        run: |
-          echo okkkkkk!
+        use: ludeeus/action-shellcheck@master
 
