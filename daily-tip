@@ -1,4 +1,4 @@
-#!/bin/bash -mmmmmmmm
+#!/bin/bash -e
 
 tips=(
 "It is a test."
